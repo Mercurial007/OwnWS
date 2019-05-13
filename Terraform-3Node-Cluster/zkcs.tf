@@ -1,0 +1,16 @@
+module "zkcs1" {
+  source           = "./zkcs"
+  instance_name    = "${var.instance_name}_01"
+  region           = "${var.region}"
+  zkcs_size        = "${var.zkcs_size}"
+  image_id         = "${var.image_id}"
+  zkcs_flavor_is   = "${var.zkcs_flavor_is}"
+  security_group   = "${var.security_group}"
+  az               = "${var.az_1}"
+  network_name     = "${var.network_name}"
+  network          = "${var.network}"
+  team_maintaining = "${var.team_maintaining}"
+  ssh_key          = "${var.ssh_key}"
+  user             = "${var.user}"
+  key              = "${var.key}"
+}
